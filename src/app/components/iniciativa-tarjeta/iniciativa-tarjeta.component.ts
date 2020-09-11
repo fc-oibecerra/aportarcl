@@ -22,7 +22,7 @@ export class IniciativaTarjetaComponent implements OnInit {
 
   verHeroe() {
     // console.log(  this.index );
-    this.router.navigate( ['/heroe', this.index] );
+    this.router.navigate( ['/iniciativa', this.index] );
     // this.heroeSeleccionado.emit( this.index );
   }
 

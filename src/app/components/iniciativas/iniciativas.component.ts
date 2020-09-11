@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IniciativasService, Heroe } from '../../servicios/iniciativas.service';
+import { IniciativasService, Evento } from '../../servicios/iniciativas.service';
 import { Router } from '@angular/router';
 
 
@@ -9,16 +9,16 @@ import { Router } from '@angular/router';
 })
 export class IniciativasComponent implements OnInit {
 
-  heroes:Heroe[] = [];
+  heroes:Evento[] = [];
 
-  constructor( private _heroesService:IniciativasService,
+  constructor( private _iniciativasService:IniciativasService,
                private router:Router
                 ) {
     // console.log("constructor");
   }
 
   ngOnInit() {
-    this.heroes = this._heroesService.getHeroes();
+    this.heroes = this._iniciativasService.getEventos();
     // console.log( this.heroes );
   }
 

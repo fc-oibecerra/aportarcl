@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class IniciativasService {
 
-  private heroes:Heroe[] = [
+  private eventos:Evento[] = [
     {
       nombre: "Trauma Ocular",
       bio: "Evento en apoyo a coordinadora de victimas de trauma ocular.",
@@ -26,28 +26,28 @@ export class IniciativasService {
   }
 
 
-  getHeroes():Heroe[]{
-    return this.heroes;
+  getEventos():Evento[]{
+    return this.eventos;
   }
 
   getHeroe( idx: string ){
-    return this.heroes[idx];
+    return this.eventos[idx];
   }
 
-  buscarHeroes( termino:string ):Heroe[]{
+  buscarEventos( termino:string ):Evento[]{
 
-    let heroesArr:Heroe[] = [];
+    let heroesArr:Evento[] = [];
     termino = termino.toLowerCase();
 
-    for( let i = 0; i < this.heroes.length; i ++ ){
+    for( let i = 0; i < this.eventos.length; i ++ ){
 
-      let heroe = this.heroes[i];
+      let evento = this.eventos[i];
 
-      let nombre = heroe.nombre.toLowerCase();
+      let nombre = evento.nombre.toLowerCase();
 
       if( nombre.indexOf( termino ) >= 0  ){
-        heroe.idx = i;
-        heroesArr.push( heroe )
+        evento.idx = i;
+        heroesArr.push( evento )
       }
 
     }
@@ -60,7 +60,7 @@ export class IniciativasService {
 }
 
 
-export interface Heroe{
+export interface Evento{
   nombre: string;
   bio: string;
   img: string;

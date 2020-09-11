@@ -2,8 +2,8 @@
   <img class="card-img-top img-fluid" [src]="heroe.img" [alt]="heroe.nombre" (click)="verHeroe()">
   <div class="card-body">
     <h4 class="card-title">{{ heroe.nombre }}</h4>
-    <p class="card-text"> {{ heroe.bio }} </p>
-    <p class="card-text"><small class="text-muted">{{ heroe.aparicion }}</small></p>
+    <!--<p class="card-text"> {{ heroe.bio }} </p>-->
+    <p class="card-text"><small class="text-muted">fecha {{ heroe.aparicion }}</small></p>
 
     <button (click)="verHeroe()"
       type="button" class="btn btn-outline-primary btn-block">

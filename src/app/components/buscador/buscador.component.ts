@@ -8,11 +8,11 @@ import { IniciativasService } from '../../servicios/iniciativas.service';
 })
 export class BuscadorComponent implements OnInit {
 
-  heroes:any[] = []
+  eventos:any[] = []
   termino:string;
 
   constructor( private activatedRoute:ActivatedRoute,
-              private _heroesService: IniciativasService) {
+              private _iniciativasService: IniciativasService) {
 
   }
 
@@ -20,8 +20,8 @@ export class BuscadorComponent implements OnInit {
 
     this.activatedRoute.params.subscribe( params =>{
       this.termino =params['termino'];
-      this.heroes = this._heroesService.buscarHeroes( params['termino'] );
-      console.log( this.heroes );
+      this.eventos = this._iniciativasService.buscarEventos( params['termino'] );
+      console.log( this.eventos );
     });
 
   }
