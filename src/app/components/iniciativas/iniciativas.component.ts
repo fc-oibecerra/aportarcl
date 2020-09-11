@@ -1,17 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import { HeroesService, Heroe } from '../../servicios/heroes.service';
+import { IniciativasService, Heroe } from '../../servicios/iniciativas.service';
 import { Router } from '@angular/router';
 
 
 @Component({
   selector: 'app-heroes',
-  templateUrl: './heroes.component.html'
+  templateUrl: './iniciativas.component.html'
 })
-export class HeroesComponent implements OnInit {
+export class IniciativasComponent implements OnInit {
 
   heroes:Heroe[] = [];
 
-  constructor( private _heroesService:HeroesService,
+  constructor( private _heroesService:IniciativasService,
                private router:Router
                 ) {
     // console.log("constructor");

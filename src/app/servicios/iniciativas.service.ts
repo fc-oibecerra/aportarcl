@@ -2,7 +2,7 @@
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class HeroesService {
+export class IniciativasService {
 
   private heroes:Heroe[] = [
     {

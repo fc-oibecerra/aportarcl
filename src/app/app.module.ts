@@ -7,14 +7,14 @@ import { HttpModule } from '@angular/http';
 import { APP_ROUTING } from './app.routes';
 
 // Servicios
-import { HeroesService } from './servicios/heroes.service';
+import { IniciativasService } from './servicios/iniciativas.service';
 
 // Componentes
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
-import { HeroesComponent } from './components/heroes/heroes.component';
+import { IniciativasComponent } from './components/iniciativas/iniciativas.component';
 import { HeroeComponent } from './components/heroe/heroe.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
 import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.component';
@@ -25,7 +25,7 @@ import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.
     NavbarComponent,
     HomeComponent,
     AboutComponent,
-    HeroesComponent,
+    IniciativasComponent,
     HeroeComponent,
     BuscadorComponent,
     HeroeTarjetaComponent
@@ -37,7 +37,7 @@ import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.
     APP_ROUTING
   ],
   providers: [
-    HeroesService
+    IniciativasService
   ],
   bootstrap: [AppComponent]
 })

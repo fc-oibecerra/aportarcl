@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { HeroesService } from '../../servicios/heroes.service';
+import { IniciativasService } from '../../servicios/iniciativas.service';
 
 @Component({
   selector: 'app-buscador',
@@ -12,7 +12,7 @@ export class BuscadorComponent implements OnInit {
   termino:string;
 
   constructor( private activatedRoute:ActivatedRoute,
-              private _heroesService: HeroesService) {
+              private _heroesService: IniciativasService) {
 
   }
 
