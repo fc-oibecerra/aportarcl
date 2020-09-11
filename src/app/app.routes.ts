@@ -12,7 +12,7 @@ const APP_ROUTES: Routes = [
   { path: 'iniciativas', component: IniciativasComponent },
   { path: 'iniciativa/:id', component: IniciativaComponent },
   { path: 'buscar/:termino', component: BuscadorComponent },
-  { path: '**', pathMatch: 'full', redirectTo: 'home' }
+  { path: '**', pathMatch: 'full', redirectTo: 'iniciativas' }
 ];
 
 export const APP_ROUTING = RouterModule.forRoot(APP_ROUTES, {useHash:true});
