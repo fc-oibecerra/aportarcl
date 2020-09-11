@@ -3,10 +3,10 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-heroe-tarjeta',
-  templateUrl: './heroe-tarjeta.component.html',
-  styleUrls: ['./heroe-tarjeta.component.css']
+  templateUrl: './iniciativa-tarjeta.component.html',
+  styleUrls: ['./iniciativa-tarjeta.component.css']
 })
-export class HeroeTarjetaComponent implements OnInit {
+export class IniciativaTarjetaComponent implements OnInit {
 
   @Input() heroe: any = {};
   @Input() index: number;

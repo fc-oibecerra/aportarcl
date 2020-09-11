@@ -4,20 +4,20 @@ import { ActivatedRoute } from '@angular/router'
 import { IniciativasService } from '../../servicios/iniciativas.service';
 
 @Component({
-  selector: 'app-heroe',
-  templateUrl: './heroe.component.html'
+  selector: 'app-iniciativa',
+  templateUrl: './iniciativa.component.html'
 })
-export class HeroeComponent {
+export class IniciativaComponent {
 
-  heroe:any = {};
+  iniciativa:any = {};
 
 
   constructor( private activatedRoute: ActivatedRoute,
-               private _heroesService: IniciativasService
+               private _iniciativasService: IniciativasService
     ){
 
     this.activatedRoute.params.subscribe( params =>{
-        this.heroe = this._heroesService.getHeroe( params['id'] );
+        this.iniciativa = this._iniciativasService.getHeroe( params['id'] );
         // console.log(this.heroe);
     });
 

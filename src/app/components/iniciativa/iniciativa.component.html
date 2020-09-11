@@ -1,0 +1,28 @@
+<h1 class="animated fadeIn">{{ iniciativa.nombre | uppercase }} <small>({{ iniciativa.aparicion | date:'y' }})</small></h1>
+<hr>
+
+<div class="row animated fadeIn fast">
+
+  <div class="col-md-4">
+
+    <img [src]="iniciativa.img" class="img-fluid" [alt]="iniciativa.nombre">
+    <br><br>
+    <a [routerLink]="['/iniciativas']" class="btn btn-outline-danger btn-block">Regresar</a>
+
+  </div>
+
+  <div class="col-md-8">
+    <h3>{{ iniciativa.nombre }}</h3>
+    <hr>
+    <p>
+      {{ iniciativa.bio }}
+    </p>
+    <div>
+      <img *ngIf="iniciativa.casa == 'Marvel'" class="img-logo" src="assets/img/marvel-logo.png" alt="DC">
+      <img *ngIf="iniciativa.casa == 'DC'" class="img-logo" src="assets/img/dc-logo.jpg" alt="Marvel">
+    </div>
+
+
+  </div>
+
+</div>
