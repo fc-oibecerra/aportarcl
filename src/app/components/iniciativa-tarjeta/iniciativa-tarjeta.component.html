@@ -1,16 +1,18 @@
 <div class="card">
-  <div class="card-header">
+  <div class="card-header" style="color:#ffffff;background-color:rgba(0, 0, 0, 1.0)">
     {{ heroe.nombre }}
   </div>
-  <div class="card-body ">    
+  <div class="card-body" style="background-color:rgba(77, 0, 77, 0.6);">    
     <img class="card-img-top img-fluid"  [src]="heroe.img" [alt]="heroe.nombre" (click)="verHeroe()">
    <!-- <h4 class="card-title">{{ heroe.nombre }}</h4>-->
-    <!--<h6 class="card-subtitle mb-2 text-muted">{{ heroe.casa }}</h6>-->
-      <p class="card-text text-center"><small class="text-muted"> {{ heroe.aparicion }}</small></p>
-      <p class="card-text"> {{ heroe.bio }} </p>
-      <div class="col-md-12 text-center">
-        <button (click)="verHeroe()" type="button" class="btn btn-outline-success">
-          <svg  width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+   
+    
+   <p class="card-text text-center"><small class="text-muted"> {{ heroe.aparicion }}</small></p>
+   <h6 class="card-subtitle mb-2 text-muted">{{ heroe.casa }}</h6>
+      <p class="card-text" style="color:#ffffff"> {{ heroe.bio }} </p>
+      <div class="col-md-12 text-right">
+        <button (click)="verHeroe()" type="button" class="btn btn-info">
+          <svg  width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-eye-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
             <path fill-rule="evenodd" d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
           </svg>

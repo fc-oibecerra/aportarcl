@@ -25,5 +25,6 @@ export class IniciativasComponent implements OnInit {
   verHeroe( idx:number ){
     this.router.navigate( ['/heroe',idx] );
   }
+  
 
 }

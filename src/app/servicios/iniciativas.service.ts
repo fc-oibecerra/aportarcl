@@ -6,11 +6,12 @@ export class IniciativasService {
 
   private eventos:Evento[] = [
     {
-      nombre: "Talleres de monitores Constitucionales",
-      bio: "Taller abierto para formación de ciudadanos que a su vez puedan formar a otros en los aspectos principales del proceso constituyente. Inscribete aqui <a href="">Formulario de inscripción</a>",
+      nombre: "Talleres de Monitores Constitucionales",
+      bio: "Taller abierto para formación de ciudadanos que a su vez puedan formar a otros en los aspectos principales del proceso constituyente.",
       img: "assets/iniciativas/mellado.jpg",
       aparicion: "2020-10-05",
-      casa:"taller"
+      casa:"taller o charla",
+      enlace:"https://forms.gle/M1eDPYTXiMoQyMMS7"
     }
   ];
 
@@ -59,5 +60,6 @@ export interface Evento{
   img: string;
   aparicion: string;
   casa: string;
+  enlace: string;
   idx?: number;
 };
