@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router'
-
 import { IniciativasService } from '../../servicios/iniciativas.service';
 
 @Component({
@@ -22,5 +21,10 @@ export class IniciativaComponent {
     });
 
   }
+
+  goToUrl(): void {
+    window.open(this.iniciativa.enlace, '_blank');
+    //window.location.href = this.iniciativa.enlace;
+}
 
 }
